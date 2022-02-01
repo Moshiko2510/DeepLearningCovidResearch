@@ -1,0 +1,117 @@
+C:\Users\Daniel-PC\PycharmProjects\cnn\venv\Scripts\python.exe C:/Users/Daniel-PC/PycharmProjects/cnn/r1_92.6_k-fold.py
+2021-08-03 18:35:28.280267: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudart64_110.dll
+C:\Users\Daniel-PC\PycharmProjects\cnn\venv\lib\site-packages\keras_preprocessing\image\image_data_generator.py:349: UserWarning: This ImageDataGenerator specifies `featurewise_std_normalization`, which overrides setting of `featurewise_center`.
+  warnings.warn('This ImageDataGenerator specifies '
+3
+Found 5983 images belonging to 3 classes.
+Found 1490 images belonging to 3 classes.
+Found 1490 images belonging to 3 classes.
+2021-08-03 18:35:30.456300: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-08-03 18:35:30.457324: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library nvcuda.dll
+2021-08-03 18:35:31.124920: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:02:00.0 name: NVIDIA GeForce MX250 computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 3 deviceMemorySize: 2.00GiB deviceMemoryBandwidth: 44.76GiB/s
+2021-08-03 18:35:31.125330: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudart64_110.dll
+2021-08-03 18:35:31.136471: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublas64_11.dll
+2021-08-03 18:35:31.136719: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublasLt64_11.dll
+2021-08-03 18:35:31.140977: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cufft64_10.dll
+2021-08-03 18:35:31.142372: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library curand64_10.dll
+2021-08-03 18:35:31.151026: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusolver64_10.dll
+2021-08-03 18:35:31.154540: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusparse64_11.dll
+2021-08-03 18:35:31.155531: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudnn64_8.dll
+2021-08-03 18:35:31.155825: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-08-03 18:35:31.156213: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-08-03 18:35:31.157174: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:02:00.0 name: NVIDIA GeForce MX250 computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 3 deviceMemorySize: 2.00GiB deviceMemoryBandwidth: 44.76GiB/s
+2021-08-03 18:35:31.157757: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudart64_110.dll
+2021-08-03 18:35:31.157985: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublas64_11.dll
+2021-08-03 18:35:31.158212: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublasLt64_11.dll
+2021-08-03 18:35:31.158471: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cufft64_10.dll
+2021-08-03 18:35:31.158691: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library curand64_10.dll
+2021-08-03 18:35:31.158914: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusolver64_10.dll
+2021-08-03 18:35:31.159119: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusparse64_11.dll
+2021-08-03 18:35:31.159322: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudnn64_8.dll
+2021-08-03 18:35:31.159550: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-08-03 18:35:31.646474: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-08-03 18:35:31.646740: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2021-08-03 18:35:31.646891: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2021-08-03 18:35:31.647187: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 1342 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce MX250, pci bus id: 0000:02:00.0, compute capability: 6.1)
+2021-08-03 18:35:31.648702: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+------------------------------------------------------------------------
+Training for fold3
+C:\Users\Daniel-PC\PycharmProjects\cnn\venv\lib\site-packages\keras_preprocessing\image\image_data_generator.py:720: UserWarning: This ImageDataGenerator specifies `featurewise_center`, but it hasn't been fit on any training data. Fit it first by calling `.fit(numpy_data)`.
+  warnings.warn('This ImageDataGenerator specifies '
+C:\Users\Daniel-PC\PycharmProjects\cnn\venv\lib\site-packages\keras_preprocessing\image\image_data_generator.py:728: UserWarning: This ImageDataGenerator specifies `featurewise_std_normalization`, but it hasn't been fit on any training data. Fit it first by calling `.fit(numpy_data)`.
+  warnings.warn('This ImageDataGenerator specifies '
+2021-08-03 18:35:31.960515: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+Epoch 1/18
+2021-08-03 18:35:32.537108: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublas64_11.dll
+2021-08-03 18:35:32.835895: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublasLt64_11.dll
+2021-08-03 18:35:32.955215: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudnn64_8.dll
+2021-08-03 18:35:33.590144: I tensorflow/core/platform/windows/subprocess.cc:308] SubProcess ended with return code: 0
+
+2021-08-03 18:35:33.630844: I tensorflow/core/platform/windows/subprocess.cc:308] SubProcess ended with return code: 0
+
+747/747 [==============================] - 115s 151ms/step - loss: 0.7035 - acc: 0.7420 - val_loss: 0.3539 - val_acc: 0.8569
+Epoch 2/18
+747/747 [==============================] - 109s 146ms/step - loss: 0.3362 - acc: 0.8648 - val_loss: 0.1899 - val_acc: 0.9267
+Epoch 3/18
+747/747 [==============================] - 114s 153ms/step - loss: 0.2944 - acc: 0.8865 - val_loss: 0.4158 - val_acc: 0.7903
+Epoch 4/18
+747/747 [==============================] - 121s 162ms/step - loss: 0.2459 - acc: 0.9082 - val_loss: 0.5878 - val_acc: 0.7312
+Epoch 5/18
+747/747 [==============================] - 125s 168ms/step - loss: 0.2512 - acc: 0.9075 - val_loss: 0.6786 - val_acc: 0.6996
+Epoch 6/18
+747/747 [==============================] - 124s 166ms/step - loss: 0.2260 - acc: 0.9171 - val_loss: 0.1387 - val_acc: 0.9556
+Epoch 7/18
+747/747 [==============================] - 125s 167ms/step - loss: 0.2249 - acc: 0.9181 - val_loss: 0.1209 - val_acc: 0.9583
+Epoch 8/18
+747/747 [==============================] - 124s 166ms/step - loss: 0.2198 - acc: 0.9220 - val_loss: 0.1643 - val_acc: 0.9368
+Epoch 9/18
+747/747 [==============================] - 124s 167ms/step - loss: 0.1969 - acc: 0.9239 - val_loss: 0.1618 - val_acc: 0.9462
+Epoch 10/18
+747/747 [==============================] - 124s 167ms/step - loss: 0.1920 - acc: 0.9317 - val_loss: 0.6292 - val_acc: 0.7688
+Epoch 11/18
+747/747 [==============================] - 126s 168ms/step - loss: 0.1916 - acc: 0.9318 - val_loss: 0.9214 - val_acc: 0.6243
+Epoch 12/18
+747/747 [==============================] - 128s 171ms/step - loss: 0.1904 - acc: 0.9233 - val_loss: 0.1386 - val_acc: 0.9556
+Epoch 13/18
+747/747 [==============================] - 127s 170ms/step - loss: 0.1657 - acc: 0.9402 - val_loss: 0.1935 - val_acc: 0.9294
+Epoch 14/18
+747/747 [==============================] - 127s 171ms/step - loss: 0.1965 - acc: 0.9305 - val_loss: 0.2385 - val_acc: 0.9281
+Epoch 15/18
+747/747 [==============================] - 127s 170ms/step - loss: 0.1842 - acc: 0.9322 - val_loss: 6.3953 - val_acc: 0.2957
+Epoch 16/18
+747/747 [==============================] - 127s 171ms/step - loss: 0.1553 - acc: 0.9460 - val_loss: 0.1043 - val_acc: 0.9738
+Epoch 17/18
+747/747 [==============================] - 127s 170ms/step - loss: 0.1767 - acc: 0.9403 - val_loss: 6.2049 - val_acc: 0.3091
+Epoch 18/18
+747/747 [==============================] - 128s 171ms/step - loss: 0.1532 - acc: 0.9436 - val_loss: 0.1193 - val_acc: 0.9509
+Found 1490 images belonging to 3 classes.
+1490/1490 [==============================] - 18s 12ms/step - loss: 0.1194 - acc: 0.9510
+Test loss: 0.11941786110401154
+Test accuracy: 0.9510067105293274
+              precision    recall  f1-score   support
+
+           0       1.00      0.93      0.96       320
+           1       0.84      0.98      0.90       315
+           2       0.99      0.95      0.97       855
+
+    accuracy                           0.95      1490
+   macro avg       0.94      0.95      0.94      1490
+weighted avg       0.96      0.95      0.95      1490
+
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Score per fold
+------------------------------------------------------------------------
+> Fold 1 - Loss: 0.11941786110401154 - Accuracy: 0.9510067105293274%
+------------------------------------------------------------------------
+Average scores for all folds:
+> Accuracy: 0.9510067105293274 (+- 0.0)
+> Loss: 0.11941786110401154
+------------------------------------------------------------------------
+
+Process finished with exit code 0

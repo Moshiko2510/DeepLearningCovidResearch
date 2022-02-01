@@ -1,0 +1,231 @@
+C:\Users\Daniel-PC\PycharmProjects\cnn\venv\Scripts\python.exe C:/Users/Daniel-PC/PycharmProjects/cnn/venv/r3_darkcovidnet.py
+2021-07-06 18:36:43.140465: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudart64_110.dll
+C:\Users\Daniel-PC\PycharmProjects\cnn\venv\lib\site-packages\keras_preprocessing\image\image_data_generator.py:349: UserWarning: This ImageDataGenerator specifies `featurewise_std_normalization`, which overrides setting of `featurewise_center`.
+  warnings.warn('This ImageDataGenerator specifies '
+3
+Found 5984 images belonging to 3 classes.
+Found 1490 images belonging to 3 classes.
+2021-07-06 18:36:48.423152: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-07-06 18:36:48.433482: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library nvcuda.dll
+2021-07-06 18:36:49.179345: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:02:00.0 name: NVIDIA GeForce MX250 computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 3 deviceMemorySize: 2.00GiB deviceMemoryBandwidth: 44.76GiB/s
+2021-07-06 18:36:49.180317: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudart64_110.dll
+2021-07-06 18:36:49.294685: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublas64_11.dll
+2021-07-06 18:36:49.294927: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublasLt64_11.dll
+2021-07-06 18:36:49.337728: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cufft64_10.dll
+2021-07-06 18:36:49.347274: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library curand64_10.dll
+2021-07-06 18:36:49.451941: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusolver64_10.dll
+2021-07-06 18:36:49.490601: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusparse64_11.dll
+2021-07-06 18:36:49.495044: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudnn64_8.dll
+2021-07-06 18:36:49.613344: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-07-06 18:36:49.617617: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-07-06 18:36:49.621569: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:02:00.0 name: NVIDIA GeForce MX250 computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 3 deviceMemorySize: 2.00GiB deviceMemoryBandwidth: 44.76GiB/s
+2021-07-06 18:36:49.625143: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudart64_110.dll
+2021-07-06 18:36:49.626399: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublas64_11.dll
+2021-07-06 18:36:49.627552: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublasLt64_11.dll
+2021-07-06 18:36:49.628754: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cufft64_10.dll
+2021-07-06 18:36:49.629776: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library curand64_10.dll
+2021-07-06 18:36:49.630687: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusolver64_10.dll
+2021-07-06 18:36:49.631598: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusparse64_11.dll
+2021-07-06 18:36:49.632418: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudnn64_8.dll
+2021-07-06 18:36:49.633354: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-07-06 18:36:51.598857: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-07-06 18:36:51.599099: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2021-07-06 18:36:51.599237: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2021-07-06 18:36:51.600814: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 1342 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce MX250, pci bus id: 0000:02:00.0, compute capability: 6.1)
+2021-07-06 18:36:51.603245: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d (Conv2D)              (None, 256, 256, 8)       224       
+_________________________________________________________________
+batch_normalization (BatchNo (None, 256, 256, 8)       32        
+_________________________________________________________________
+leaky_re_lu (LeakyReLU)      (None, 256, 256, 8)       0         
+_________________________________________________________________
+max_pooling2d (MaxPooling2D) (None, 128, 128, 8)       0         
+_________________________________________________________________
+conv2d_1 (Conv2D)            (None, 128, 128, 16)      1168      
+_________________________________________________________________
+batch_normalization_1 (Batch (None, 128, 128, 16)      64        
+_________________________________________________________________
+leaky_re_lu_1 (LeakyReLU)    (None, 128, 128, 16)      0         
+_________________________________________________________________
+max_pooling2d_1 (MaxPooling2 (None, 64, 64, 16)        0         
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 64, 64, 32)        4640      
+_________________________________________________________________
+batch_normalization_2 (Batch (None, 64, 64, 32)        128       
+_________________________________________________________________
+leaky_re_lu_2 (LeakyReLU)    (None, 64, 64, 32)        0         
+_________________________________________________________________
+conv2d_3 (Conv2D)            (None, 64, 64, 16)        528       
+_________________________________________________________________
+batch_normalization_3 (Batch (None, 64, 64, 16)        64        
+_________________________________________________________________
+leaky_re_lu_3 (LeakyReLU)    (None, 64, 64, 16)        0         
+_________________________________________________________________
+conv2d_4 (Conv2D)            (None, 64, 64, 32)        4640      
+_________________________________________________________________
+batch_normalization_4 (Batch (None, 64, 64, 32)        128       
+_________________________________________________________________
+leaky_re_lu_4 (LeakyReLU)    (None, 64, 64, 32)        0         
+_________________________________________________________________
+max_pooling2d_2 (MaxPooling2 (None, 32, 32, 32)        0         
+_________________________________________________________________
+conv2d_5 (Conv2D)            (None, 32, 32, 64)        18496     
+_________________________________________________________________
+batch_normalization_5 (Batch (None, 32, 32, 64)        256       
+_________________________________________________________________
+leaky_re_lu_5 (LeakyReLU)    (None, 32, 32, 64)        0         
+_________________________________________________________________
+conv2d_6 (Conv2D)            (None, 32, 32, 32)        2080      
+_________________________________________________________________
+batch_normalization_6 (Batch (None, 32, 32, 32)        128       
+_________________________________________________________________
+leaky_re_lu_6 (LeakyReLU)    (None, 32, 32, 32)        0         
+_________________________________________________________________
+conv2d_7 (Conv2D)            (None, 32, 32, 64)        18496     
+_________________________________________________________________
+batch_normalization_7 (Batch (None, 32, 32, 64)        256       
+_________________________________________________________________
+leaky_re_lu_7 (LeakyReLU)    (None, 32, 32, 64)        0         
+_________________________________________________________________
+max_pooling2d_3 (MaxPooling2 (None, 16, 16, 64)        0         
+_________________________________________________________________
+conv2d_8 (Conv2D)            (None, 16, 16, 128)       73856     
+_________________________________________________________________
+batch_normalization_8 (Batch (None, 16, 16, 128)       512       
+_________________________________________________________________
+leaky_re_lu_8 (LeakyReLU)    (None, 16, 16, 128)       0         
+_________________________________________________________________
+conv2d_9 (Conv2D)            (None, 16, 16, 64)        8256      
+_________________________________________________________________
+batch_normalization_9 (Batch (None, 16, 16, 64)        256       
+_________________________________________________________________
+leaky_re_lu_9 (LeakyReLU)    (None, 16, 16, 64)        0         
+_________________________________________________________________
+conv2d_10 (Conv2D)           (None, 16, 16, 128)       73856     
+_________________________________________________________________
+batch_normalization_10 (Batc (None, 16, 16, 128)       512       
+_________________________________________________________________
+leaky_re_lu_10 (LeakyReLU)   (None, 16, 16, 128)       0         
+_________________________________________________________________
+max_pooling2d_4 (MaxPooling2 (None, 8, 8, 128)         0         
+_________________________________________________________________
+conv2d_11 (Conv2D)           (None, 8, 8, 256)         295168    
+_________________________________________________________________
+batch_normalization_11 (Batc (None, 8, 8, 256)         1024      
+_________________________________________________________________
+leaky_re_lu_11 (LeakyReLU)   (None, 8, 8, 256)         0         
+_________________________________________________________________
+conv2d_12 (Conv2D)           (None, 8, 8, 128)         32896     
+_________________________________________________________________
+batch_normalization_12 (Batc (None, 8, 8, 128)         512       
+_________________________________________________________________
+leaky_re_lu_12 (LeakyReLU)   (None, 8, 8, 128)         0         
+_________________________________________________________________
+conv2d_13 (Conv2D)           (None, 8, 8, 256)         295168    
+_________________________________________________________________
+batch_normalization_13 (Batc (None, 8, 8, 256)         1024      
+_________________________________________________________________
+leaky_re_lu_13 (LeakyReLU)   (None, 8, 8, 256)         0         
+_________________________________________________________________
+conv2d_14 (Conv2D)           (None, 8, 8, 128)         32896     
+_________________________________________________________________
+batch_normalization_14 (Batc (None, 8, 8, 128)         512       
+_________________________________________________________________
+leaky_re_lu_14 (LeakyReLU)   (None, 8, 8, 128)         0         
+_________________________________________________________________
+conv2d_15 (Conv2D)           (None, 8, 8, 256)         295168    
+_________________________________________________________________
+batch_normalization_15 (Batc (None, 8, 8, 256)         1024      
+_________________________________________________________________
+leaky_re_lu_15 (LeakyReLU)   (None, 8, 8, 256)         0         
+_________________________________________________________________
+conv2d_16 (Conv2D)           (None, 8, 8, 3)           6915      
+_________________________________________________________________
+batch_normalization_16 (Batc (None, 8, 8, 3)           12        
+_________________________________________________________________
+flatten (Flatten)            (None, 192)               0         
+_________________________________________________________________
+dense (Dense)                (None, 3)                 579       
+_________________________________________________________________
+dense_1 (Dense)              (None, 3)                 12        
+=================================================================
+Total params: 1,171,486
+Trainable params: 1,168,264
+Non-trainable params: 3,222
+_________________________________________________________________
+------------------------------------------------------------------------
+Training for fold1
+C:\Users\Daniel-PC\PycharmProjects\cnn\venv\lib\site-packages\keras_preprocessing\image\image_data_generator.py:720: UserWarning: This ImageDataGenerator specifies `featurewise_center`, but it hasn't been fit on any training data. Fit it first by calling `.fit(numpy_data)`.
+  warnings.warn('This ImageDataGenerator specifies '
+C:\Users\Daniel-PC\PycharmProjects\cnn\venv\lib\site-packages\keras_preprocessing\image\image_data_generator.py:728: UserWarning: This ImageDataGenerator specifies `featurewise_std_normalization`, but it hasn't been fit on any training data. Fit it first by calling `.fit(numpy_data)`.
+  warnings.warn('This ImageDataGenerator specifies '
+2021-07-06 18:36:52.835140: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+Epoch 1/12
+2021-07-06 18:36:54.539377: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublas64_11.dll
+2021-07-06 18:36:56.261002: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublasLt64_11.dll
+2021-07-06 18:36:56.468149: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudnn64_8.dll
+2021-07-06 18:36:59.870513: I tensorflow/core/platform/windows/subprocess.cc:308] SubProcess ended with return code: 0
+
+2021-07-06 18:36:59.938211: I tensorflow/core/platform/windows/subprocess.cc:308] SubProcess ended with return code: 0
+
+748/748 [==============================] - 224s 287ms/step - loss: 0.7348 - acc: 0.6973 - val_loss: 0.2348 - val_acc: 0.9079
+Epoch 2/12
+748/748 [==============================] - 196s 262ms/step - loss: 0.3175 - acc: 0.8809 - val_loss: 0.1759 - val_acc: 0.9362
+Epoch 3/12
+748/748 [==============================] - 205s 274ms/step - loss: 0.2765 - acc: 0.8884 - val_loss: 0.1845 - val_acc: 0.9388
+Epoch 4/12
+748/748 [==============================] - 213s 285ms/step - loss: 0.2364 - acc: 0.9121 - val_loss: 0.3201 - val_acc: 0.8784
+Epoch 5/12
+748/748 [==============================] - 209s 280ms/step - loss: 0.2177 - acc: 0.9221 - val_loss: 0.3713 - val_acc: 0.8508
+Epoch 6/12
+748/748 [==============================] - 207s 276ms/step - loss: 0.2196 - acc: 0.9203 - val_loss: 0.1393 - val_acc: 0.9483
+Epoch 7/12
+748/748 [==============================] - 207s 277ms/step - loss: 0.1907 - acc: 0.9283 - val_loss: 0.4299 - val_acc: 0.8589
+Epoch 8/12
+748/748 [==============================] - 211s 282ms/step - loss: 0.1887 - acc: 0.9305 - val_loss: 0.1838 - val_acc: 0.9355
+Epoch 9/12
+748/748 [==============================] - 209s 279ms/step - loss: 0.1656 - acc: 0.9403 - val_loss: 0.2000 - val_acc: 0.9288
+Epoch 10/12
+748/748 [==============================] - 210s 280ms/step - loss: 0.1762 - acc: 0.9401 - val_loss: 0.1502 - val_acc: 0.9429
+Epoch 11/12
+748/748 [==============================] - 209s 279ms/step - loss: 0.1783 - acc: 0.9360 - val_loss: 0.1641 - val_acc: 0.9469
+Epoch 12/12
+748/748 [==============================] - 210s 280ms/step - loss: 0.1607 - acc: 0.9423 - val_loss: 0.1244 - val_acc: 0.9550
+2021-07-06 19:18:45.145697: W tensorflow/python/util/util.cc:348] Sets are not currently considered sequences, but this may change in the future, so consider avoiding using them.
+Found 1490 images belonging to 3 classes.
+1490/1490 [==============================] - 17s 11ms/step - loss: 0.1243 - acc: 0.9550
+Test loss: 0.1242746114730835
+Test accuracy: 0.955033540725708
+C:\Users\Daniel-PC\PycharmProjects\cnn\venv\lib\site-packages\tensorflow\python\keras\engine\sequential.py:450: UserWarning: `model.predict_classes()` is deprecated and will be removed after 2021-01-01. Please use instead:* `np.argmax(model.predict(x), axis=-1)`,   if your model does multi-class classification   (e.g. if it uses a `softmax` last-layer activation).* `(model.predict(x) > 0.5).astype("int32")`,   if your model does binary classification   (e.g. if it uses a `sigmoid` last-layer activation).
+  warnings.warn('`model.predict_classes()` is deprecated and '
+              precision    recall  f1-score   support
+
+           0       0.96      0.99      0.97       320
+           1       0.87      0.97      0.91       315
+           2       0.99      0.94      0.97       855
+
+    accuracy                           0.96      1490
+   macro avg       0.94      0.96      0.95      1490
+weighted avg       0.96      0.96      0.96      1490
+
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Score per fold
+------------------------------------------------------------------------
+> Fold 1 - Loss: 0.1242746114730835 - Accuracy: 0.955033540725708%
+------------------------------------------------------------------------
+Average scores for all folds:
+> Accuracy: 0.955033540725708 (+- 0.0)
+> Loss: 0.1242746114730835
+------------------------------------------------------------------------
+
+Process finished with exit code 0

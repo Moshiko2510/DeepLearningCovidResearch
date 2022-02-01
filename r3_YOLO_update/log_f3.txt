@@ -1,0 +1,62 @@
+C:\Users\Daniel-PC\PycharmProjects\cnn\venv\Scripts\python.exe C:/Users/Daniel-PC/PycharmProjects/cnn/venv/r3_darkcovidnet.py
+2021-05-08 18:51:41.204475: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudart64_110.dll
+C:\Users\Daniel-PC\PycharmProjects\cnn\venv\lib\site-packages\keras_preprocessing\image\image_data_generator.py:349: UserWarning: This ImageDataGenerator specifies `featurewise_std_normalization`, which overrides setting of `featurewise_center`.
+  warnings.warn('This ImageDataGenerator specifies '
+3
+Found 5983 images belonging to 3 classes.
+Found 1490 images belonging to 3 classes.
+
+------------------------------------------------------------------------
+Training for fold3
+
+Epoch 1/12
+747/747 [==============================] - 159s 208ms/step - loss: 0.6048 - acc: 0.7500
+Epoch 2/12
+747/747 [==============================] - 153s 205ms/step - loss: 0.3128 - acc: 0.8835
+Epoch 3/12
+747/747 [==============================] - 156s 209ms/step - loss: 0.2645 - acc: 0.8991
+Epoch 4/12
+747/747 [==============================] - 167s 223ms/step - loss: 0.2306 - acc: 0.9144
+Epoch 5/12
+747/747 [==============================] - 183s 244ms/step - loss: 0.2383 - acc: 0.9153
+Epoch 6/12
+747/747 [==============================] - 185s 247ms/step - loss: 0.1919 - acc: 0.9273
+Epoch 7/12
+747/747 [==============================] - 182s 244ms/step - loss: 0.1993 - acc: 0.9305
+Epoch 8/12
+747/747 [==============================] - 182s 244ms/step - loss: 0.2092 - acc: 0.9277
+Epoch 9/12
+747/747 [==============================] - 182s 244ms/step - loss: 0.1692 - acc: 0.9387
+Epoch 10/12
+747/747 [==============================] - 182s 244ms/step - loss: 0.1805 - acc: 0.9366
+Epoch 11/12
+747/747 [==============================] - 182s 244ms/step - loss: 0.1510 - acc: 0.9459
+Epoch 12/12
+747/747 [==============================] - 186s 249ms/step - loss: 0.1601 - acc: 0.9403
+Found 1490 images belonging to 3 classes.
+1490/1490 [==============================] - 23s 15ms/step - loss: 0.1489 - acc: 0.9436
+Test loss: 0.14891579747200012
+Test accuracy: 0.9436241388320923
+
+              precision    recall  f1-score   support
+
+           0       0.93      0.92      0.92       320
+           1       0.86      0.98      0.91       315
+           2       0.99      0.94      0.96       855
+
+    accuracy                           0.94      1490
+   macro avg       0.93      0.95      0.93      1490
+weighted avg       0.95      0.94      0.94      1490
+
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Score per fold
+------------------------------------------------------------------------
+> Fold 1 - Loss: 0.14891579747200012 - Accuracy: 0.9436241388320923%
+------------------------------------------------------------------------
+Average scores for all folds:
+> Accuracy: 0.9436241388320923 (+- 0.0)
+> Loss: 0.14891579747200012
+------------------------------------------------------------------------
+
+Process finished with exit code 0
