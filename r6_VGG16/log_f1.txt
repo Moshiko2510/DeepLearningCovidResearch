@@ -1,0 +1,183 @@
+C:\Users\Daniel-PC\PycharmProjects\cnn\venv\Scripts\python.exe C:/Users/Daniel-PC/PycharmProjects/cnn/venv/r7_vgg16.py
+2021-05-26 21:05:48.542217: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudart64_110.dll
+3
+C:\Users\Daniel-PC\PycharmProjects\cnn\venv\lib\site-packages\keras_preprocessing\image\image_data_generator.py:349: UserWarning: This ImageDataGenerator specifies `featurewise_std_normalization`, which overrides setting of `featurewise_center`.
+  warnings.warn('This ImageDataGenerator specifies '
+Found 5984 images belonging to 3 classes.
+Found 1490 images belonging to 3 classes.
+2021-05-26 21:05:50.525254: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-05-26 21:05:50.526242: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library nvcuda.dll
+2021-05-26 21:05:51.318908: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:02:00.0 name: NVIDIA GeForce MX250 computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 3 deviceMemorySize: 2.00GiB deviceMemoryBandwidth: 44.76GiB/s
+2021-05-26 21:05:51.319311: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudart64_110.dll
+2021-05-26 21:05:51.327118: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublas64_11.dll
+2021-05-26 21:05:51.327342: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublasLt64_11.dll
+2021-05-26 21:05:51.331102: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cufft64_10.dll
+2021-05-26 21:05:51.332405: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library curand64_10.dll
+2021-05-26 21:05:51.341164: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusolver64_10.dll
+2021-05-26 21:05:51.344531: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusparse64_11.dll
+2021-05-26 21:05:51.345203: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudnn64_8.dll
+2021-05-26 21:05:51.345455: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-05-26 21:05:51.345824: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-05-26 21:05:51.346882: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:02:00.0 name: NVIDIA GeForce MX250 computeCapability: 6.1
+coreClock: 1.582GHz coreCount: 3 deviceMemorySize: 2.00GiB deviceMemoryBandwidth: 44.76GiB/s
+2021-05-26 21:05:51.347477: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudart64_110.dll
+2021-05-26 21:05:51.347774: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublas64_11.dll
+2021-05-26 21:05:51.348059: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublasLt64_11.dll
+2021-05-26 21:05:51.348356: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cufft64_10.dll
+2021-05-26 21:05:51.348550: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library curand64_10.dll
+2021-05-26 21:05:51.348749: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusolver64_10.dll
+2021-05-26 21:05:51.348950: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusparse64_11.dll
+2021-05-26 21:05:51.349150: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudnn64_8.dll
+2021-05-26 21:05:51.349373: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-05-26 21:05:51.844599: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-26 21:05:51.844836: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2021-05-26 21:05:51.844973: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2021-05-26 21:05:51.845250: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 1342 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce MX250, pci bus id: 0000:02:00.0, compute capability: 6.1)
+2021-05-26 21:05:51.846430: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d (Conv2D)              (None, 224, 224, 32)      896       
+_________________________________________________________________
+conv2d_1 (Conv2D)            (None, 224, 224, 64)      18496     
+_________________________________________________________________
+max_pooling2d (MaxPooling2D) (None, 112, 112, 64)      0         
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 112, 112, 128)     73856     
+_________________________________________________________________
+conv2d_3 (Conv2D)            (None, 112, 112, 128)     147584    
+_________________________________________________________________
+max_pooling2d_1 (MaxPooling2 (None, 56, 56, 128)       0         
+_________________________________________________________________
+conv2d_4 (Conv2D)            (None, 56, 56, 256)       295168    
+_________________________________________________________________
+conv2d_5 (Conv2D)            (None, 56, 56, 256)       590080    
+_________________________________________________________________
+conv2d_6 (Conv2D)            (None, 56, 56, 256)       590080    
+_________________________________________________________________
+max_pooling2d_2 (MaxPooling2 (None, 28, 28, 256)       0         
+_________________________________________________________________
+conv2d_7 (Conv2D)            (None, 28, 28, 512)       1180160   
+_________________________________________________________________
+conv2d_8 (Conv2D)            (None, 28, 28, 512)       2359808   
+_________________________________________________________________
+conv2d_9 (Conv2D)            (None, 28, 28, 512)       2359808   
+_________________________________________________________________
+max_pooling2d_3 (MaxPooling2 (None, 14, 14, 512)       0         
+_________________________________________________________________
+conv2d_10 (Conv2D)           (None, 14, 14, 512)       2359808   
+_________________________________________________________________
+conv2d_11 (Conv2D)           (None, 14, 14, 512)       2359808   
+_________________________________________________________________
+conv2d_12 (Conv2D)           (None, 14, 14, 512)       2359808   
+_________________________________________________________________
+max_pooling2d_4 (MaxPooling2 (None, 7, 7, 512)         0         
+_________________________________________________________________
+flatten (Flatten)            (None, 25088)             0         
+_________________________________________________________________
+dense (Dense)                (None, 1024)              25691136  
+_________________________________________________________________
+dropout (Dropout)            (None, 1024)              0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 3)                 3075      
+=================================================================
+Total params: 40,389,571
+Trainable params: 40,389,571
+Non-trainable params: 0
+_________________________________________________________________
+------------------------------------------------------------------------
+Training for fold1
+C:\Users\Daniel-PC\PycharmProjects\cnn\venv\lib\site-packages\keras_preprocessing\image\image_data_generator.py:720: UserWarning: This ImageDataGenerator specifies `featurewise_center`, but it hasn't been fit on any training data. Fit it first by calling `.fit(numpy_data)`.
+  warnings.warn('This ImageDataGenerator specifies '
+C:\Users\Daniel-PC\PycharmProjects\cnn\venv\lib\site-packages\keras_preprocessing\image\image_data_generator.py:728: UserWarning: This ImageDataGenerator specifies `featurewise_std_normalization`, but it hasn't been fit on any training data. Fit it first by calling `.fit(numpy_data)`.
+  warnings.warn('This ImageDataGenerator specifies '
+2021-05-26 21:05:52.200348: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+Epoch 1/13
+2021-05-26 21:05:52.781494: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublas64_11.dll
+2021-05-26 21:05:53.082458: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublasLt64_11.dll
+2021-05-26 21:05:53.252733: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudnn64_8.dll
+2021-05-26 21:05:53.913474: I tensorflow/core/platform/windows/subprocess.cc:308] SubProcess ended with return code: 0
+
+2021-05-26 21:05:53.957646: I tensorflow/core/platform/windows/subprocess.cc:308] SubProcess ended with return code: 0
+
+2021-05-26 21:05:54.565290: W tensorflow/core/common_runtime/bfc_allocator.cc:248] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.15GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-05-26 21:05:54.622142: W tensorflow/core/common_runtime/bfc_allocator.cc:248] Allocator (GPU_0_bfc) ran out of memory trying to allocate 677.78MiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-05-26 21:05:55.112243: W tensorflow/core/common_runtime/bfc_allocator.cc:248] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.09GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-05-26 21:05:56.709588: W tensorflow/core/common_runtime/bfc_allocator.cc:248] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.08GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-05-26 21:05:58.297559: W tensorflow/core/common_runtime/bfc_allocator.cc:248] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.10GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-05-26 21:05:58.316563: W tensorflow/core/common_runtime/bfc_allocator.cc:248] Allocator (GPU_0_bfc) ran out of memory trying to allocate 585.50MiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-05-26 21:05:59.275204: W tensorflow/core/common_runtime/bfc_allocator.cc:248] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.11GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-05-26 21:05:59.580225: W tensorflow/core/common_runtime/bfc_allocator.cc:248] Allocator (GPU_0_bfc) ran out of memory trying to allocate 610.00MiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-05-26 21:05:59.591881: W tensorflow/core/common_runtime/bfc_allocator.cc:248] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.11GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-05-26 21:05:59.815593: W tensorflow/core/common_runtime/bfc_allocator.cc:248] Allocator (GPU_0_bfc) ran out of memory trying to allocate 595.06MiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+748/748 [==============================] - 523s 687ms/step - loss: 0.7767 - acc: 0.6595
+WARNING:tensorflow:Learning rate reduction is conditioned on metric `val_accuracy` which is not available. Available metrics are: loss,acc,lr
+Epoch 2/13
+748/748 [==============================] - 522s 697ms/step - loss: 0.4715 - acc: 0.8093
+WARNING:tensorflow:Learning rate reduction is conditioned on metric `val_accuracy` which is not available. Available metrics are: loss,acc,lr
+Epoch 3/13
+748/748 [==============================] - 522s 698ms/step - loss: 0.4059 - acc: 0.8445
+WARNING:tensorflow:Learning rate reduction is conditioned on metric `val_accuracy` which is not available. Available metrics are: loss,acc,lr
+Epoch 4/13
+748/748 [==============================] - 523s 699ms/step - loss: 0.3448 - acc: 0.8694
+WARNING:tensorflow:Learning rate reduction is conditioned on metric `val_accuracy` which is not available. Available metrics are: loss,acc,lr
+Epoch 5/13
+748/748 [==============================] - 522s 697ms/step - loss: 0.2702 - acc: 0.8967
+WARNING:tensorflow:Learning rate reduction is conditioned on metric `val_accuracy` which is not available. Available metrics are: loss,acc,lr
+Epoch 6/13
+748/748 [==============================] - 521s 697ms/step - loss: 0.2714 - acc: 0.9002
+WARNING:tensorflow:Learning rate reduction is conditioned on metric `val_accuracy` which is not available. Available metrics are: loss,acc,lr
+Epoch 7/13
+748/748 [==============================] - 520s 695ms/step - loss: 0.2451 - acc: 0.9123
+Epoch 8/13
+WARNING:tensorflow:Learning rate reduction is conditioned on metric `val_accuracy` which is not available. Available metrics are: loss,acc,lr
+748/748 [==============================] - 519s 694ms/step - loss: 0.2334 - acc: 0.9163
+WARNING:tensorflow:Learning rate reduction is conditioned on metric `val_accuracy` which is not available. Available metrics are: loss,acc,lr
+Epoch 9/13
+748/748 [==============================] - 519s 693ms/step - loss: 0.2106 - acc: 0.9253
+WARNING:tensorflow:Learning rate reduction is conditioned on metric `val_accuracy` which is not available. Available metrics are: loss,acc,lr
+Epoch 10/13
+748/748 [==============================] - 518s 692ms/step - loss: 0.2200 - acc: 0.9208
+WARNING:tensorflow:Learning rate reduction is conditioned on metric `val_accuracy` which is not available. Available metrics are: loss,acc,lr
+Epoch 11/13
+748/748 [==============================] - 518s 692ms/step - loss: 0.2046 - acc: 0.9189
+WARNING:tensorflow:Learning rate reduction is conditioned on metric `val_accuracy` which is not available. Available metrics are: loss,acc,lr
+Epoch 12/13
+748/748 [==============================] - 519s 693ms/step - loss: 0.1868 - acc: 0.9338
+WARNING:tensorflow:Learning rate reduction is conditioned on metric `val_accuracy` which is not available. Available metrics are: loss,acc,lr
+Epoch 13/13
+748/748 [==============================] - 518s 692ms/step - loss: 0.1940 - acc: 0.9327
+WARNING:tensorflow:Learning rate reduction is conditioned on metric `val_accuracy` which is not available. Available metrics are: loss,acc,lr
+Found 1490 images belonging to 3 classes.
+1490/1490 [==============================] - 85s 56ms/step - loss: 0.1464 - acc: 0.9483
+Test loss: 0.14636243879795074
+Test accuracy: 0.9483221769332886
+C:\Users\Daniel-PC\PycharmProjects\cnn\venv\lib\site-packages\tensorflow\python\keras\engine\sequential.py:450: UserWarning: `model.predict_classes()` is deprecated and will be removed after 2021-01-01. Please use instead:* `np.argmax(model.predict(x), axis=-1)`,   if your model does multi-class classification   (e.g. if it uses a `softmax` last-layer activation).* `(model.predict(x) > 0.5).astype("int32")`,   if your model does binary classification   (e.g. if it uses a `sigmoid` last-layer activation).
+  warnings.warn('`model.predict_classes()` is deprecated and '
+              precision    recall  f1-score   support
+
+           0       0.97      0.93      0.95       320
+           1       0.86      0.97      0.91       315
+           2       0.98      0.95      0.96       855
+
+    accuracy                           0.95      1490
+   macro avg       0.94      0.95      0.94      1490
+weighted avg       0.95      0.95      0.95      1490
+
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Score per fold
+------------------------------------------------------------------------
+> Fold 1 - Loss: 0.14636243879795074 - Accuracy: 0.9483221769332886%
+------------------------------------------------------------------------
+Average scores for all folds:
+> Accuracy: 0.9483221769332886 (+- 0.0)
+> Loss: 0.14636243879795074
+------------------------------------------------------------------------
+
+Process finished with exit code 0
